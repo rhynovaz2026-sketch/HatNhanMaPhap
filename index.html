@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#091326">
+
+<title>Grimoire – Hạt Nhân Ma Pháp</title>
+
+<style>
+
+:root {
+
+  --bg:#080f1e; --panel:#101c31; --gold:#d9b969;
+
+  --text:#e8edf6; --muted:#a8b5c9; --green:#70d69a;
+
+  --blue:#70bfff; --purple:#c9a0ff; --yellow:#ffe08a;
+
+  --red:#ff929b;
+
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth;scroll-padding-top:18px}
+
+body{
+
+  margin:0;background:radial-gradient(ellipse at top,#142745,var(--bg) 58%);
+
+  color:var(--text);font-family:Georgia,"Times New Roman",serif;
+
+  line-height:1.7
+
+}
+
+header,.wrap{max-width:850px;margin:auto;padding:22px}
+
+header{text-align:center;padding-top:48px}
+
+.cover{
+
+  border:2px solid var(--gold);outline:1px solid #796438;
+
+  outline-offset:5px;padding:32px 18px;background:#0b1528;
+
+  border-radius:8px;box-shadow:0 0 35px #142d50
+
+}
+
+.symbol{font-size:52px;color:var(--gold);line-height:1.2}
+
+h1{font-size:clamp(27px,7vw,44px);line-height:1.25;color:var(--gold);margin:15px 0}
+
+.subtitle{letter-spacing:3px;font-size:12px;color:#c8d7ef}
+
+.tagline{font-style:italic;color:#c7d5eb}
+
+h2{color:var(--gold);font-size:25px;border-bottom:1px solid #806d43;padding-bottom:8px}
+
+h3{font-size:22px;line-height:1.3;margin:8px 0;color:var(--gold)}
+
+p{margin:8px 0}
+
+a{color:#b9d9ff;text-decoration:none}
+
+a:active,a:hover{text-decoration:underline}
+
+.toc,.spell,.rule{
+
+  border:1px solid #75623b;border-radius:9px;
+
+  background:linear-gradient(145deg,#111e34,#0b1425);
+
+  padding:18px;margin:16px 0
+
+}
+
+.toc a{display:block;padding:5px 0;border-bottom:1px solid #26334a}
+
+.chapter{margin-top:38px;scroll-margin-top:12px}
+
+.spell{border-left:4px solid var(--rank);scroll-margin-top:12px}
+
+.rank{font-size:12px;letter-spacing:1.5px;color:var(--rank);font-weight:bold}
+
+.type{color:#bfd0e8;font-size:14px}
+
+.label{color:var(--gold);font-weight:bold}
+
+.incantation{
+
+  border-left:2px solid var(--gold);padding:9px 13px;
+
+  margin-top:13px;color:#f3d992;font-style:italic;background:#172033
+
+}
+
+.d{--rank:var(--green)} .c{--rank:var(--blue)}
+
+.b{--rank:var(--purple)} .a{--rank:var(--yellow)}
+
+.s{--rank:var(--red)}
+
+.badge{color:var(--rank);font-weight:bold}
+
+.top{text-align:right;font-size:13px;margin:8px 0}
+
+footer{text-align:center;color:var(--muted);padding:30px 10px;font-size:13px}
+
+hr{border:0;border-top:1px solid #4b442f;margin:24px 0}
+
+@media(min-width:700px){.wrap{padding:28px}.spell{padding:22px}}
+
+@media print{
+
+ body{background:#fff;color:#111}
+
+ .cover,.toc,.spell,.rule{background:#fff;box-shadow:none}
+
+ h1,h2,h3,.label,.incantation,.rank{color:#222}
+
+ a{color:#111}.top{display:none}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header id="top">
+
+  <div class="cover">
+
+    <div class="symbol">☉ ◉ ☽</div>
+
+    <div class="subtitle">ARCANE GRIMOIRE · NUCLEAR CORE</div>
+
+    <h1>HẠT NHÂN<br>MA PHÁP</h1>
+
+    <p class="tagline">“Mọi quỹ đạo đều bắt đầu từ một hạt nhân.”</p>
+
+    <hr>
+
+    <p>17 PHÉP THUẬT · 5 CẤP ĐỘ</p>
+
+    <p style="color:var(--muted)">D · C · B · A · S</p>
+
+  </div>
+
+</header>
+
+<main class="wrap">
+
+<section class="toc" id="muc-luc">
+
+  <h2>✧ Mục lục ma pháp</h2>
+
+  <a href="#cap-d">Chương I — Cấp D: Nền tảng (5 phép)</a>
+
+  <a href="#cap-c">Chương II — Cấp C: Mở rộng (3 phép)</a>
+
+  <a href="#cap-b">Chương III — Cấp B: Chiến trường (2 phép)</a>
+
+  <a href="#cap-a">Chương IV — Cấp A: Thần thể (2 phép)</a>
+
+  <a href="#cap-s">Chương V — Cấp S: Tối thượng (5 phép)</a>
+
+  <a href="#quy-tac">Quy tắc đặc biệt của Grimoire</a>
+
+</section>
+
+<section class="chapter" id="cap-d">
+
+<h2>Chương I — Ma pháp cấp D</h2>
+
+<p>Những phép cơ bản tạo nền tảng cho chiến đấu, phòng thủ và điều khiển quỹ đạo.</p>
+
+<article class="spell d" id="d01">
+
+<div class="rank">D-01 · CẤP D</div><h3>HẠCH KIẾM</h3>
+
+<p class="type">Phân loại: Cận chiến · Tấn công</p>
+
+<p><span class="label">Mô tả:</span> Tập trung ma lực vào bàn tay, tạo thành lưỡi kiếm xanh lam từ năng lượng hạt nhân. Có thể điều chỉnh độ dài và hình dạng theo lượng ma lực.</p>
+
+<p><span class="label">Điểm mạnh:</span> Ra đòn nhanh, linh hoạt, hiệu quả ở cự ly gần.</p>
+
+<p><span class="label">Giới hạn:</span> Độ bền và sức chém phụ thuộc vào khả năng duy trì ma lực.</p>
+
+<div class="incantation">“Hạt nhân — hóa thành lưỡi kiếm!”</div>
+
+</article>
+
+<article class="spell d" id="d02">
+
+<div class="rank">D-02 · CẤP D</div><h3>TINH HẠCH</h3>
+
+<p class="type">Phân loại: Tấn công tầm xa · Đạn ma pháp</p>
+
+<p><span class="label">Mô tả:</span> Nén ma lực thành viên tinh hạch phát sáng rồi phóng về phía mục tiêu. Kích thước và tốc độ có thể thay đổi theo ý người dùng.</p>
+
+<p><span class="label">Điểm mạnh:</span> Dễ ngắm, tiêu hao thấp, thích hợp tấn công liên tục.</p>
+
+<p><span class="label">Giới hạn:</span> Sức xuyên phá hạn chế trước kết giới mạnh.</p>
+
+<div class="incantation">“Một điểm sáng — xuyên phá!”</div>
+
+</article>
+
+<article class="spell d" id="d03">
+
+<div class="rank">D-03 · CẤP D</div><h3>TAM HOÀN HỘ THỂ</h3>
+
+<p class="type">Phân loại: Phòng thủ · Kết giới cá nhân</p>
+
+<p><span class="label">Mô tả:</span> Ba vòng quỹ đạo xoay quanh cơ thể, hấp thụ và làm lệch một phần lực từ các đòn đánh.</p>
+
+<p><span class="label">Điểm mạnh:</span> Bảo vệ nhiều hướng và cho phép người dùng tiếp tục di chuyển.</p>
+
+<p><span class="label">Giới hạn:</span> Các vòng có thể bị phá vỡ khi chịu đòn mạnh hoặc liên tiếp.</p>
+
+<div class="incantation">“Ba vòng hội tụ — hộ giới!”</div>
+
+</article>
+
+<article class="spell d" id="d04">
+
+<div class="rank">D-04 · CẤP D</div><h3>KHÔNG BỘ</h3>
+
+<p class="type">Phân loại: Di chuyển · Không gian</p>
+
+<p><span class="label">Mô tả:</span> Dịch chuyển tức thời trong phạm vi ngắn, để lại tàn ảnh xanh lam tại vị trí cũ.</p>
+
+<p><span class="label">Điểm mạnh:</span> Né đòn, áp sát và đổi vị trí nhanh.</p>
+
+<p><span class="label">Giới hạn:</span> Phạm vi ngắn; cần nhận biết vị trí đến và có thể bị cản bởi kết giới không gian mạnh.</p>
+
+<div class="incantation">“Không gian — bước theo quỹ đạo!”</div>
+
+</article>
+
+<article class="spell d" id="d05">
+
+<div class="rank">D-05 · CẤP D</div><h3>QUỸ ĐẠO ĐIỀU KHIỂN</h3>
+
+<p class="type">Phân loại: Điều khiển · Hỗ trợ · Phòng thủ</p>
+
+<p><span class="label">Mô tả:</span> Tạo tối đa năm hạt nhân nhỏ có thể dò chuyển động gần đó, làm lệch đòn đánh yếu và hỗ trợ điều hướng các phép khác.</p>
+
+<p><span class="label">Điểm mạnh:</span> Đa dụng, kiểm soát nhiều hướng, là nền tảng cho các phép quỹ đạo cao cấp.</p>
+
+<p><span class="label">Giới hạn:</span> Điều khiển càng nhiều hạt nhân càng đòi hỏi tập trung và độ chính xác.</p>
+
+<div class="incantation">“Vạn quỹ đạo — nghe lệnh ta!”</div>
+
+</article>
+
+</section>
+
+<section class="chapter" id="cap-c">
+
+<h2>Chương II — Ma pháp cấp C</h2>
+
+<p>Gia tăng khả năng xuyên phá, bảo vệ đồng minh và kết nối không gian.</p>
+
+<article class="spell c" id="c01">
+
+<div class="rank">C-01 · CẤP C</div><h3>THƯƠNG TINH HẠCH</h3>
+
+<p class="type">Phân loại: Tầm xa · Xuyên phá</p>
+
+<p><span class="label">Mô tả:</span> Nén nhiều tinh hạch thành một cây thương ma lực, tập trung năng lượng vào một điểm để xuyên qua phòng thủ.</p>
+
+<p><span class="label">Điểm mạnh:</span> Tầm xa và độ chính xác cao, hiệu quả với kết giới đơn lớp.</p>
+
+<p><span class="label">Giới hạn:</span> Cần thời gian hội tụ; kết giới nhiều lớp làm giảm sức xuyên phá.</p>
+
+<div class="incantation">“Hội tụ vạn điểm — xuyên thủng tinh không!”</div>
+
+</article>
+
+<article class="spell c" id="c02">
+
+<div class="rank">C-02 · CẤP C</div><h3>TINH THỂ HỘ GIỚI</h3>
+
+<p class="type">Phân loại: Phòng thủ · Kết giới nhóm</p>
+
+<p><span class="label">Mô tả:</span> Dựng mái vòm tinh thể xanh lam quanh người dùng và đồng minh, phân tán lực của đòn ma pháp va chạm.</p>
+
+<p><span class="label">Điểm mạnh:</span> Bảo vệ nhiều người và vững chắc hơn Tam Hoàn Hộ Thể.</p>
+
+<p><span class="label">Giới hạn:</span> Khó di chuyển khi duy trì; đòn đánh tập trung có thể làm kết giới nứt vỡ.</p>
+
+<div class="incantation">“Tinh thể kết giới — đứng vững trước sóng dữ!”</div>
+
+</article>
+
+<article class="spell c" id="c03">
+
+<div class="rank">C-03 · CẤP C</div><h3>CỔNG QUỸ ĐẠO</h3>
+
+<p class="type">Phân loại: Không gian · Dịch chuyển</p>
+
+<p><span class="label">Mô tả:</span> Tạo hai cổng không gian liên kết, cho phép người dùng và đồng minh di chuyển từ đầu này sang đầu kia.</p>
+
+<p><span class="label">Điểm mạnh:</span> Hỗ trợ di chuyển nhóm, rút lui và thay đổi thế trận.</p>
+
+<p><span class="label">Giới hạn:</span> Hai đầu cổng cần được duy trì ổn định; khoảng cách xa làm tăng chi phí ma lực.</p>
+
+<div class="incantation">“Hai đầu quỹ đạo — nối liền không gian!”</div>
+
+</article>
+
+</section>
+
+<section class="chapter" id="cap-b">
+
+<h2>Chương III — Ma pháp cấp B</h2>
+
+<p>Những phép có khả năng tác động đáng kể đến toàn bộ khu vực chiến đấu.</p>
+
+<article class="spell b" id="b01">
+
+<div class="rank">B-01 · CẤP B</div><h3>THIÊN THỂ GIÁNG LÂM</h3>
+
+<p class="type">Phân loại: Tấn công diện rộng · Thiên thể ma pháp</p>
+
+<p><span class="label">Mô tả:</span> Tạo một thiên thể bằng ma lực trên không trung rồi điều khiển nó giáng xuống khu vực chỉ định, giải phóng sóng năng lượng lớn.</p>
+
+<p><span class="label">Điểm mạnh:</span> Phạm vi rộng, gây áp lực lên nhiều đối thủ cùng lúc.</p>
+
+<p><span class="label">Giới hạn:</span> Tốn ma lực, cần thời gian thi triển và dễ bị phát hiện. Phiên bản mang thuộc tính phóng xạ ma pháp để lại dư chấn cần xử lý.</p>
+
+<div class="incantation">“Thiên thể thức tỉnh — giáng lâm!”</div>
+
+</article>
+
+<article class="spell b" id="b02">
+
+<div class="rank">B-02 · CẤP B</div><h3>VỰC QUỸ ĐẠO</h3>
+
+<p class="type">Phân loại: Khống chế chiến trường · Phản hướng</p>
+
+<p><span class="label">Mô tả:</span> Thiết lập vùng quỹ đạo có thể bẻ hướng một số phép yếu hơn hoặc làm lệch đường bay của chúng.</p>
+
+<p><span class="label">Điểm mạnh:</span> Kiểm soát không gian giao tranh, bảo vệ đồng minh và tạo cơ hội phản công.</p>
+
+<p><span class="label">Giới hạn:</span> Không thể điều khiển mọi phép thuật; ma pháp vượt trội có thể xuyên qua vùng ảnh hưởng.</p>
+
+<div class="incantation">“Mọi quỹ đạo — đều nằm trong tính toán!”</div>
+
+</article>
+
+</section>
+
+<section class="chapter" id="cap-a">
+
+<h2>Chương IV — Ma pháp cấp A</h2>
+
+<p>Đạt đến cảnh giới đồng bộ cơ thể và điều khiển chiến trường bằng hạch tâm.</p>
+
+<article class="spell a" id="a01">
+
+<div class="rank">A-01 · CẤP A</div><h3>NGUYÊN TỬ THẦN THỂ</h3>
+
+<p class="type">Phân loại: Biến thân · Cường hóa</p>
+
+<p><span class="label">Mô tả:</span> Đồng bộ cơ thể với hạch tâm ma pháp, tạo giáp năng lượng và các quỹ đạo phát sáng, tăng tốc độ, phòng thủ, cảm nhận và độ chính xác.</p>
+
+<p><span class="label">Điểm mạnh:</span> Cường hóa nhiều năng lực cùng lúc, kết hợp tốt với các phép cấp thấp.</p>
+
+<p><span class="label">Giới hạn:</span> Tiêu hao ma lực liên tục; duy trì lâu khiến khả năng kiểm soát suy giảm.</p>
+
+<div class="incantation">“Ta là lõi — ta là quỹ đạo — ta là nguồn khởi nguyên!”</div>
+
+</article>
+
+<article class="spell a" id="a02">
+
+<div class="rank">A-02 · CẤP A</div><h3>HẠCH TÂM TUYỆT ĐỐI</h3>
+
+<p class="type">Phân loại: Kiểm soát chiến trường · Phòng thủ</p>
+
+<p><span class="label">Mô tả:</span> Triệu hồi hạch tâm lớn làm trung tâm điều khiển quỹ đạo, tạo rào chắn, điều chỉnh hướng một số đòn phép và tổ chức lại thế trận.</p>
+
+<p><span class="label">Điểm mạnh:</span> Kết hợp phòng thủ và phản công; phối hợp tốt với Vực Quỹ Đạo.</p>
+
+<p><span class="label">Giới hạn:</span> Phạm vi tùy thuộc ma lực; nhiều đòn đánh đồng thời có thể gây quá tải.</p>
+
+<div class="incantation">“Trật tự của thế giới — bắt đầu từ hạt nhân!”</div>
+
+</article>
+
+</section>
+
+<section class="chapter" id="cap-s">
+
+<h2>Chương V — Ma pháp cấp S</h2>
+
+<p>Những phép tối thượng, có sức ảnh hưởng lớn và đòi hỏi trách nhiệm cao khi sử dụng.</p>
+
+<article class="spell s" id="s01">
+
+<div class="rank">S-01 · CẤP S</div><h3>NHẬT THỰC HẠT NHÂN</h3>
+
+<p class="type">Phân loại: Tấn công diện rộng · Áp chế</p>
+
+<p><span class="label">Mô tả:</span> Tạo nhật thực ma pháp khổng lồ rồi giải phóng sóng năng lượng trên diện rộng. Sóng có thể làm gián đoạn các phép yếu hơn đang được duy trì.</p>
+
+<p><span class="label">Điểm mạnh:</span> Phạm vi lớn, gây áp lực lên toàn bộ chiến trường và phá thế phòng thủ.</p>
+
+<p><span class="label">Giới hạn:</span> Tiêu hao ma lực cực lớn. Phiên bản có thuộc tính phóng xạ ma pháp để lại dư chấn sau khi đòn đánh kết thúc.</p>
+
+<div class="incantation">“Bóng tối che phủ thiên không — hạt nhân phán quyết!”</div>
+
+</article>
+
+<article class="spell s" id="s02">
+
+<div class="rank">S-02 · CẤP S</div><h3>LỤC QUỸ ĐẠO THẦN VƯƠNG</h3>
+
+<p class="type">Phân loại: Đa chức năng · Tấn công · Phòng thủ · Không gian</p>
+
+<p><span class="label">Mô tả:</span> Triệu hồi sáu quỹ đạo với chức năng riêng:</p>
+
+<ul>
+
+<li>Quỹ đạo 1 — Tấn công bằng tinh hạch.</li>
+
+<li>Quỹ đạo 2 — Phòng thủ và tạo lá chắn.</li>
+
+<li>Quỹ đạo 3 — Hỗ trợ dịch chuyển.</li>
+
+<li>Quỹ đạo 4 — Cảm nhận chuyển động và ma lực.</li>
+
+<li>Quỹ đạo 5 — Phản hướng những đòn phép phù hợp.</li>
+
+<li>Quỹ đạo 6 — Ổn định toàn bộ hệ thống.</li>
+
+</ul>
+
+<p><span class="label">Điểm mạnh:</span> Chuyển đổi linh hoạt giữa nhiều chiến thuật.</p>
+
+<p><span class="label">Giới hạn:</span> Mỗi quỹ đạo bị phá sẽ làm mất chức năng tương ứng. Nhiều quỹ đạo bị vô hiệu hóa khiến hệ thống mất ổn định.</p>
+
+<div class="incantation">“Sáu quỹ đạo thức tỉnh — vạn pháp quy nhất!”</div>
+
+</article>
+
+<article class="spell s" id="s03">
+
+<div class="rank">S-03 · CẤP S</div><h3>KHỞI NGUYÊN VÔ HẠN: BIG BANG</h3>
+
+<p class="type">Phân loại: Tối thượng · Tái cấu trúc vùng ma pháp · Bảo hộ</p>
+
+<p><span class="label">Mô tả:</span> Giải phóng hạch tâm để tạo trường ma pháp khổng lồ, mở rộng như sự khai sinh của vũ trụ. Trường có thể ổn định vùng ma lực hỗn loạn, tái lập cấu trúc ma pháp và tạo lớp bảo hộ mạnh.</p>
+
+<p><span class="label">Điểm mạnh:</span> Thay đổi cục diện, bảo vệ nhiều người và tái ổn định khu vực bị ma pháp phá hủy.</p>
+
+<p><span class="label">Giới hạn:</span> Đòi hỏi ma lực khổng lồ và tập trung tuyệt đối. Sau khi sử dụng, Grimoire ngủ đông; các phép của sách tạm thời không thể sử dụng cho đến khi hạch tâm hồi phục.</p>
+
+<div class="incantation">“Từ hư vô khai sinh vũ trụ — từ khởi nguyên, ta định nghĩa vô hạn!”</div>
+
+</article>
+
+<article class="spell s" id="s04">
+
+<div class="rank">S-04 · CẤP S</div><h3>TỬ TINH PHÓNG XẠ</h3>
+
+<p class="type">Phân loại: Nguyền ấn ma pháp · Tích lũy năng lượng · Khống chế</p>
+
+<p><span class="label">Mô tả:</span> Đánh dấu mục tiêu hoặc khu vực bằng tử tinh ma pháp. Dấu ấn tích tụ năng lượng hư cấu theo thời gian và bùng phát khi đạt ngưỡng hoàn tất.</p>
+
+<p>Đây là <strong>phóng xạ ma pháp hư cấu</strong>, không phải phóng xạ vật lý ngoài đời thực. Tàn dư của phép có thể gây tổn thương ma pháp cho người ở gần nếu không được cô lập và thanh tẩy.</p>
+
+<p><span class="label">Điểm mạnh:</span> Tạo áp lực lâu dài, buộc đối phương phải xử lý dấu ấn.</p>
+
+<p><span class="label">Giới hạn:</span> Dấu ấn cần thời gian để hoàn tất. Ma pháp phong ấn hoặc vô hiệu hóa nguồn ma lực có thể chặn tiến trình trước ngưỡng hoàn thành; phép giải trừ thông thường không nhất thiết xóa được dấu ấn.</p>
+
+<div class="incantation">“Tử tinh thức tỉnh — dư chấn định mệnh!”</div>
+
+</article>
+
+<article class="spell s" id="s05">
+
+<div class="rank">S-05 · CẤP S</div><h3>VẠN TINH HỘ GIỚI</h3>
+
+<p class="type">Phân loại: Phòng thủ tối thượng · Cô lập · Thanh tẩy</p>
+
+<p><span class="label">Mô tả:</span> Triệu hồi mái vòm khổng lồ gồm hàng vạn tinh hạch và quỹ đạo liên kết. Đây vừa là lá chắn, vừa là hệ thống kiểm soát môi trường ma pháp.</p>
+
+<p><span class="label">Chức năng 1 — Ngăn chặn từ bên ngoài:</span> Kết giới nhiều tầng chặn ma pháp từ bên ngoài xâm nhập khu vực được bảo vệ. Đòn vượt quá sức chịu đựng có thể làm kết giới suy yếu.</p>
+
+<p><span class="label">Chức năng 2 — Cô lập từ bên trong:</span> Nếu khu vực có dư chấn từ Tử Tinh Phóng Xạ hoặc Nhật Thực Hạt Nhân, kết giới khóa vùng bị ảnh hưởng và ngăn năng lượng tồn dư lan ra ngoài.</p>
+
+<p><span class="label">Chức năng 3 — Thanh tẩy hạt nhân:</span> Hệ thống hấp thụ và chuyển hóa dư chấn ma pháp thành năng lượng trung hòa. Người dùng chỉ giải trừ kết giới khi việc thanh tẩy đã hoàn tất an toàn.</p>
+
+<p><span class="label">Điểm mạnh:</span> Bảo vệ người bên trong trước ma pháp bên ngoài, đồng thời cô lập và xử lý nguồn ma pháp nguy hiểm bên trong.</p>
+
+<p><span class="label">Giới hạn:</span> Tiêu hao ma lực cực lớn. Nếu hạch tâm trung tâm bị phá hoặc lượng dư chấn vượt khả năng xử lý, kết giới có thể mất ổn định. Phải duy trì cho đến khi thanh tẩy hoàn tất hoặc có phương án phong ấn an toàn khác.</p>
+
+<div class="incantation">“Vạn tinh hội tụ — thiên địa nằm trong hộ giới!<br>Tàn dư quy không — vạn vật bình an!”</div>
+
+</article>
+
+</section>
+
+<section class="chapter" id="quy-tac">
+
+<h2>Quy tắc đặc biệt của Grimoire</h2>
+
+<div class="rule">
+
+<h3>✧ I. Dư Chấn Hạt Nhân Ma Pháp</h3>
+
+<p>Một số phép diện rộng mang thuộc tính phóng xạ ma pháp để lại năng lượng tồn dư sau khi đòn đánh kết thúc. Trong thế giới giả tưởng này, vùng tồn dư có thể gây tổn thương ma pháp cho người chưa được bảo vệ.</p>
+
+</div>
+
+<div class="rule">
+
+<h3>✧ II. Bảo Vệ Đi Đôi Với Thanh Tẩy</h3>
+
+<p>Vạn Tinh Hộ Giới ngăn ma pháp từ ngoài xâm nhập, cô lập dư chấn bên trong và thanh tẩy năng lượng tồn dư trước khi giải trừ kết giới.</p>
+
+</div>
+
+<div class="rule">
+
+<h3>✧ III. Sức Mạnh Đi Kèm Trách Nhiệm</h3>
+
+<p>Ma pháp càng mạnh càng đòi hỏi khả năng kiểm soát, ma lực và trách nhiệm lớn. Chiến thắng không chỉ nằm ở phép mạnh nhất, mà còn ở khả năng bảo vệ mọi người sau trận chiến.</p>
+
+</div>
+
+</section>
+
+<hr>
+
+<p style="text-align:center;color:var(--gold);font-style:italic">
+
+“Ta là lõi — ta là quỹ đạo — ta là nguồn khởi nguyên.”
+
+</p>
+
+<div class="top"><a href="#top">↑ Trở về đầu sách</a></div>
+
+</main>
+
+<footer>
+
+GRIMOIRE – HẠT NHÂN MA PHÁP<br>
+
+Bản lưu trữ cá nhân · 17 phép thuật · 5 cấp độ
+
+</footer>
+
+</body>
+
+</html>
